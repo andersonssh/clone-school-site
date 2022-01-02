@@ -1,6 +1,9 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: #F5F6F7;
+}
 
 body, ul, li{
     margin: 0px;
@@ -10,11 +13,16 @@ body, ul, li{
 .container{
     margin: auto;
     width: 90%;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+}
+
+.flex{
+    display: flex;
 }
 
 /*cabecalho*/
 #topo{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 12px;
@@ -30,7 +38,6 @@ body, ul, li{
     list-style: none;
 }
 .linha-itens{
-    display: flex;
     /*altura da linha*/
     line-height: 32px;
     
@@ -51,3 +58,31 @@ body, ul, li{
     width: 341px;
     height: 50px;
 }
+/*Menu principal*/
+.menu-principal{
+    background-color: black;
+    color: #f0ff1c;
+    font-weight: 600;
+    font-size: 14px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+.item-menu{
+    line-height: 50px;
+    padding: 0 15px;
+}
+.item-menu:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#search-menu{
+    background-color: #D52C1F;
+}
+#search-menu:hover{
+    background-color: #ff2c1c;
+}
+

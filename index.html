@@ -7,13 +7,14 @@
     <title>TUDO SALA DE AULA</title>
     <link rel="shortcut icon" href="imagens/estatico/icone.png" >
     <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     <div class="container">
         <header>
             <!--cabecalho topo-->
-            <nav id="topo" class="topo texto-branco upper">
-                <ul class="menu linha-itens">
+            <nav id="topo" class="topo texto-branco upper flex">
+                <ul class="menu linha-itens flex">
                     <li class="item-topo">início</li>
                     <li class="item-topo">nosso facebook</li>
                     <li class="item-topo">contato</li>
@@ -31,20 +32,20 @@
             </div>
             <!--menu principal-->
             <nav>
-                <div>
-                    <ul>
-                        <li>início</li>
-                        <li>atividades</li>
-                        <li>novidades</li>
-                        <li>bncc</li>
-                        <li>provas / simulados</li>
-                        <li>+suportes</li>
-                        <li>quizzes</li>
-                        <li>em destaques</li>
+                <div class="flex menu-principal texto-branco upper">
+                    <ul class="menu flex">
+                        <li class="item-menu">início</li>
+                        <li class="item-menu">atividades <i class="fal fa-angle-down"></i></li>
+                        <li class="item-menu">novidades <i class="fal fa-angle-down"></i></li>
+                        <li class="item-menu">bncc <i class="fal fa-angle-down"></i></li>
+                        <li class="item-menu">provas / simulados <i class="fal fa-angle-down"></i></i></li>
+                        <li class="item-menu">+suportes <i class="fal fa-angle-down"></i></li>
+                        <li class="item-menu">quizzes <i class="fal fa-angle-down"></i></li>
+                        <li class="item-menu">em destaques <i class="fal fa-angle-down"></i></li>
                         
                     </ul>
-                    <div>
-                        SE
+                    <div id="search-menu" class="item-menu">
+                        <i class="fas fa-search"></i>
                     </div>
                 </div>
             </nav>
