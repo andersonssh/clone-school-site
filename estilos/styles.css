@@ -69,6 +69,8 @@ body, ul, li{
     justify-content: space-between;
     width: 95%;
     margin: auto;
+    display: flex;
+    
 }
 .item-menu{
     line-height: 50px;
@@ -86,3 +88,45 @@ body, ul, li{
     background-color: #ff2c1c;
 }
 
+/*icone hamburger*/
+.hamburger{
+    display: none;
+}
+
+/*cabecalho responsivo*/
+@media (max-width: 1200px){
+    #topo{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .logo{
+        padding: 10px;
+    }
+    .logo img{
+        width: 195px;
+        height: 35px;
+        line-height: 56px;
+    }
+    .menu-principal{
+        display: none;
+    }
+    .cabecalho-principal{
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hamburger{
+        display: block;
+        padding: 0 20px;
+        line-height: 56px;
+    }
+    .hamburger:hover{
+        cursor: pointer;
+        color: #B72F2C;
+    }
+    
+}
