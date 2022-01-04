@@ -115,9 +115,9 @@ body, ul, li{
     background-color: #ff2c1c;
 }
 
-/*icone hamburger*/
-.hamburger{
-    display: none;
+.esconder-menu{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 /*cabecalho responsivo*/
@@ -153,13 +153,14 @@ body, ul, li{
         line-height: 56px;
     }
     #hamburger:hover{
+        transition: 0.3s;
         cursor: pointer;
         color: #B72F2C;
     }
     /*MENU MOBILE*/
     .mostrar-menu{
-        transition: 1s;
-        background-color: rgba(0, 0, 0, 0.404);
+        transition: 0.5s;
+        background-color: rgba(0, 0, 0, 0.404) !important;
     }
     #menu-mobile{
         width: 100%;
@@ -167,10 +168,16 @@ body, ul, li{
         position: absolute;
     }
     #barra-navegacao-mobile{
+        transition: 0.5s;
+        transform: translate3d(-300px, 0, 0);
         width: 300px;
         background-color: white;
         position: absolute;
         height: 100%;
+    }
+    .animacao-navegacao-mobile{
+        transition: 0.5s;
+        transform: translate3d(0, 0, 0) !important; 
     }
     #topo-navegacao-mobile{
         height: 56px;
