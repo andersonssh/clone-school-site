@@ -20,6 +20,12 @@ body, ul, li{
 .flex{
     display: flex;
 }
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
 
 /*cabecalho*/
 #topo{
@@ -76,11 +82,36 @@ body, ul, li{
     line-height: 50px;
     padding: 0 15px;
 }
-.item-menu:hover{
+
+.menu.flex li:hover{
     color: white;
     cursor: pointer;
+    background-color: #B52E2C;
 }
 
+/*SUBMENU*/
+.item-menu:hover ul{
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+.item-menu ul{
+    background-color: black;
+    display: none;
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+}
+.item-menu ul li{
+    width: 200px;
+    padding: 0 0 0 5px;
+    background-color: black;
+    line-height: 35px;
+}
+
+/*SEARCH DO MENU*/
 #search-menu{
     background-color: #D52C1F;
 }
