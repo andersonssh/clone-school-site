@@ -11,6 +11,7 @@ body, ul, li{
 }
 
 .container{
+    transition: 0.5s;
     margin: auto;
     width: 90%;
     background-color: white;
@@ -125,6 +126,7 @@ body, ul, li{
         display: none;
     }
     .container{
+        transition: 0.5s;
         width: 100%;
     }
     .logo{
@@ -145,14 +147,61 @@ body, ul, li{
         justify-content: space-between;
     }
 
-    .hamburger{
+    #hamburger{
         display: block;
         padding: 0 20px;
         line-height: 56px;
     }
-    .hamburger:hover{
+    #hamburger:hover{
         cursor: pointer;
         color: #B72F2C;
     }
-    
+    /*MENU MOBILE*/
+    .mostrar-menu{
+        transition: 1s;
+        background-color: rgba(0, 0, 0, 0.404);
+    }
+    .fechar-menu{
+        display: none !important;
+    }
+    #menu-mobile{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        transition: 1s;   
+    }
+    #barra-navegacao-mobile{
+        width: 300px;
+        background-color: white;
+        position: absolute;
+        height: 100%;
+    }
+    #topo-navegacao-mobile{
+        height: 56px;
+        line-height: 56px;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.171);
+    }
+    #search-mobile{
+        padding-left: 15px;
+    }
+    #search-mobile input{
+        outline: none;
+        background-color: red;
+        border: none;
+        height: 32px;
+        background-color: #FAFAFA;
+        margin-right: 0;
+    }
+    #search-mobile i{
+        height: 32px;
+        margin-left: 0px;
+        cursor: pointer;
+    }
+    #fechar-menu{
+        padding: 0 20px 0 20px;
+        cursor: pointer;
+    }
 }
