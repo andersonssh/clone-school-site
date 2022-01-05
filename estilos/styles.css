@@ -226,3 +226,55 @@ body, ul, li{
 }
 
 /*FIM BARRA DE NAVEGACAO*/
+
+.blog{
+    display: flex;
+}
+.conteudos{
+    font-size: 14px;
+    font-weight: bold;
+    width: 75%;
+}
+.colunas-2{
+    display: flex;
+    margin-left: 30px;
+}
+.assunto .titulo{
+    background-color: black;
+    color: white;
+    width: 230px;
+    top: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.assunto .titulo h2{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 5px;
+    
+}
+.post{
+    width: 400px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+}
+.post .dados{
+    padding: 0 10px 0 10px;
+    font-weight: 400;
+}
+.post a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.post .meta-data{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.post img{
+    width: 100px;
+    height: 100px;
+}
