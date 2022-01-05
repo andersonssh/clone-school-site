@@ -27,6 +27,9 @@ body, ul, li{
 .d-block{
     display: block;
 }
+.blog a:hover{
+    color: #B52E2C;
+}
 
 /*cabecalho*/
 #topo{
@@ -284,11 +287,14 @@ body, ul, li{
     width: 100px;
     height: 100px;
 }
-
+.lateral{
+    width: 100%;
+}
 .lateral .barra-lateral{
-    margin-top: 50px;
     width: 225px;
     height: 300px;
+    margin: auto;
+    margin-top: 50px;
 }
 .lateral .barra-lateral .submenu-lateral{
     font-size: 13px;
@@ -313,4 +319,71 @@ body, ul, li{
 }
 .b-red{
     background-color: #ff2c1c !important;
+}
+@media (max-width: 1085px){
+    .lateral{
+        display: none;
+    }
+}
+@media (max-width:835px){
+    .conteudos{
+        font-size: 18px;
+        font-weight: bold;
+        width: 95%;
+        margin-right: 15px;
+    }
+    .colunas-2{
+        display: block;
+    }
+    .assunto{
+        margin-bottom: 30px;
+    }
+    .post{
+        width: 90%;
+        height: 150px;
+        margin: 10px;
+        display: flex;
+    }
+    .post .dados{
+        padding: 0 10px 0 10px;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .post a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+    .post .meta-data{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .post img{
+        width: 175px;
+        height: 150px;
+    }
+}
+@media (max-width: 400px){
+    .post img{
+        width: 100px;
+        height: 100px;
+    }
+    .post a{
+        font-size: 14px;
+    }
+    .post p{
+        font-size: 12px;
+    }
+}
+/*FIM DO CORPO DO BLOG*/
+footer{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+footer a{
+    color: orange;
 }
