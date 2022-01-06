@@ -244,13 +244,13 @@ body, ul, li{
     margin: 20px 0 0 30px;
 }
 .assunto .titulo{
-    background-color: black;
-    color: white;
     width: 230px;
-    top: 100px;
-    height: 30px;
+    height: 0;
+    border-bottom: 30px solid black;
+    border-right: 25px solid transparent;
+    color: white;
     line-height: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .assunto .titulo h2{
     font-size: 17px;
