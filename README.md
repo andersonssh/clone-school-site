@@ -1,6 +1,6 @@
 # Clone da interface do site tudo sala de aula
 
-Veja o site acessando este [link](https://andersonssh.github.io/interface-tds)
+Veja o site acessando este [link](https://andersonssh.github.io/interface-site-escolar)
 
 **Desktop**
 
